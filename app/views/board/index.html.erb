@@ -1,0 +1,30 @@
+<div class="container">
+	<table>
+		<% @board.each do |row| %>
+			<tr class="row">
+				<% row.each do |col| %>
+					<td class="col">
+						<p id="id-<%=row%><%=col%>"> <%=col%> </p>
+					</td>
+				<% end %>
+			</tr>
+		<% end %>
+	</table>
+</div>
+
+<style type="text/css">
+	.container{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.row{
+
+	}
+	.col{
+		padding: 10px;
+		padding-right: 30px;
+		border: 1px solid black;
+	}
+
+</style>
+<script type="text/javascript"></script>
