@@ -1,6 +1,7 @@
 <div class="container">
+  <div style="display: inline-block;">
 	<table>
-		<% @board.each do |row| %>
+		<% @board_value.each do |row| %>
 			<tr class="row">
 				<% row.each do |col| %>
 					<td class="col">
@@ -10,6 +11,20 @@
 			</tr>
 		<% end %>
 	</table>
+  </div>
+ <!-- <div style="display: inline-block;">
+	<table>
+		<%# @board.each do |row| %>
+			<tr class="row">
+				<%# row.each do |col| %>
+					<td class="col">
+						<p id="id-<%#=row%><%#=col%>"> <%#=col%> </p>
+					</td>
+				<%# end %>
+			</tr>
+		<%# end %>
+	</table>
+  </div> -->
 </div>
 
 <style type="text/css">
